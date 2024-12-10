@@ -21,6 +21,7 @@ sudo systemctl status nginx
 //
 /////////////// implemented AWS VPC peering by creating two vpc in same region.
     Why VPC peering is needed and how it solves the problem.
-//////aws vpc endpoint: why it is needed    
+//////aws vpc endpoint: why it is needed and what problems it solve
+/// 
   
     
