@@ -22,6 +22,9 @@ sudo systemctl status nginx
 /////////////// implemented AWS VPC peering by creating two vpc in same region.
     Why VPC peering is needed and how it solves the problem.
 //////aws vpc endpoint: why it is needed and what problems it solve
-/// 
+/// VPC endpoints allow communication between resources in a VPC and services without exposing the VPC to the public internet. They also simplify network management by reducing the need for other connections.
+ Steps for implementing: create one s3 bucket and try to access that bucket resource from the public and private instance from a VPC.
+interface ednpoint and gateway endpoint
+
   
     
