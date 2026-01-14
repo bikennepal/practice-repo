@@ -1,0 +1,52 @@
+<!-- Identy and access management  -->
+<!-- AWS IAM - Identity and Access Management – Users, Roles, Policies -->
+
+
+<!-- policy Example of giving access to aws s3 bucket -->
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListBucket",
+        "s3:GetObject"
+      ],
+      "Resource": [
+        "arn:aws:s3:::my-example-bucket",
+        "arn:aws:s3:::my-example-bucket/*"
+      ]
+    }
+  ]
+}
+
+
+<!-- END -->
+
+<!-- Create a custom JSON policy that allows only s3:ListBucket and test it. -->
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+  {
+    "Effect": "Allow",
+    "Action": [
+      "s3:ListBucket"
+    ],
+    "Resource": [
+    "arn:aws:s3:::*"
+    ]
+  }
+  ]
+}
+
+<!-- Test the above scene -->
+<!-- =================== -->
+<!-- Explain difference between IAM user and IAM role in one paragraph. -->
+An IAM user is a permanent identity for a person or application with long-term credentials (passwords/keys) for direct AWS interaction, while an IAM role is a temporary identity for services or users to assume, providing short-lived credentials for specific tasks, making roles more secure for service-to-service or delegated access without storing permanent keys, unlike users which are for direct, ongoing access
+
+<!-- Day-3: AWS EC2 – Instances, AMIs, Key Pairs, Elastic IPs -->
+<!-- Day-4:AWS EBS & S3 – Block vs Object Storage, Lifecycle, Encryption -->
+
+
